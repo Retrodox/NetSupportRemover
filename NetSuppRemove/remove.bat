@@ -33,7 +33,7 @@ IF DEFINED NETSUPPORT_VERSION (
         ECHO Checking for running processes that need to be terminated...
 
         :: Call killtasks.bat here
-        CALL T:\TechServices-FP3\Techs\Jared\Scripts_J\IndividualScripts\killtasks.bat
+        CALL C:Path\To\IndividualScripts\killtasks.bat
         IF ERRORLEVEL 1 (
             ECHO Error occurred in killtasks.bat.
         )
