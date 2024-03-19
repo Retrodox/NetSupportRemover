@@ -4,7 +4,7 @@
 $folderPath = "C:\Program Files (x86)\NetSupport"
 
 # Define the path of the batch file
-$batchFilePath = "T:\TechServices-FP3\Techs\Jared\Scripts - J\NetSuppRemove\regRun.bat"
+$batchFilePath = "Path\To\regRun.bat"
 
 # Attempt to remove the folder
 if (Test-Path $folderPath) {
