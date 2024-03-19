@@ -3,9 +3,6 @@
 # Define the path of the folder to remove
 $folderPath = "C:\Program Files (x86)\NetSupport"
 
-# Define the path of the batch file
-$batchFilePath = "Path\To\regRun.bat"
-
 # Attempt to remove the folder
 if (Test-Path $folderPath) {
     Remove-Item -Path $folderPath -Recurse -Force
