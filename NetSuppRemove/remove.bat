@@ -39,8 +39,8 @@ IF DEFINED NETSUPPORT_VERSION (
         )
 		ECHO.
 
-		:: Now, call regRun.bat
-		powershell -NoProfile -ExecutionPolicy Bypass -File "T:\TechServices-FP3\Techs\Jared\Scripts_J\RegBangChecker\NetSuppRemoveRegCheck.ps1"
+		:: Now, call regRun.bat. This is NOT needed for viewing purposes and only serves to check if the EnableLUA registry value is set to 1 or not for our company.
+		powershell -NoProfile -ExecutionPolicy Bypass -File "Path\To\NetSuppRemoveRegCheck.ps1"
         IF %ERRORLEVEL% NEQ 0 (
             ECHO Error occurred in regCheck.ps1
         )
